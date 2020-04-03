@@ -288,4 +288,9 @@ var _ = Describe("Katas", func() {
 		Expect(MyString("WHAT DOES THE FOX SAY").IsUpperCase()).To(Equal(true))
 		Expect(MyString("HTML CSS JAVASCRIPT PYTHON C PERL LISP JAVA GO RUBY NODEJS RUST SCALA").IsUpperCase()).To(Equal(true))
 	})
+	It("The solution should return the correct values for the sample test cases!", func() {
+		Expect(CountSheep(2)).To(Equal("1 sheep...2 sheep..."))
+		Expect(CountSheep(0)).To(Equal(""))
+		Expect(CountSheep(1)).To(Equal("1 sheep..."))
+	})
 })

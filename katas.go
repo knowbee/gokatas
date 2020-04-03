@@ -357,3 +357,13 @@ func (s MyString) IsUpperCase() bool {
 	return s == MyString(strings.ToUpper(string(s)))
 
 }
+
+// CountSheep https://www.codewars.com/kata/5b077ebdaf15be5c7f000077/train/go
+// CountSheep If you can't sleep, just count sheep!!
+func CountSheep(num int) string {
+	counts := ""
+	for i := 1; i <= num; i++ {
+		counts += strconv.Itoa(i) + " sheep..."
+	}
+	return counts
+}
