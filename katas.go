@@ -271,3 +271,22 @@ func OddCount(n int) int {
 	}
 	return n/2 + 1/2
 }
+
+// Xor https://www.codewars.com/kata/56fa3c5ce4d45d2a52001b3c/train/go
+// Xor Exclusive "or" (xor) Logical Operator
+func Xor(a, b bool) bool {
+	// if a && !b {
+	// 	return true
+	// }
+	// if !a && !b {
+	// 	return false
+	// }
+	// if !a && b {
+	// 	return true
+	// }
+	// return false
+	if a != b {
+		return true
+	}
+	return false
+}
