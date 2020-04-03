@@ -383,3 +383,9 @@ func Grow(arr []int) int {
 func OtherAngle(a int, b int) int {
 	return 180 - (a + b)
 }
+
+// Move https://www.codewars.com/kata/563a631f7cbbc236cf0000c2/train/go
+// Move Grasshopper - Terminal game move function
+func Move(position int, roll int) int {
+	return position + roll*2
+}

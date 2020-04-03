@@ -302,5 +302,7 @@ var _ = Describe("Katas", func() {
 	It("OtherAngle(60, 60)", func() { Expect(OtherAngle(60, 60)).To(Equal(60)) })
 	It("OtherAngle(43, 78)", func() { Expect(OtherAngle(43, 78)).To(Equal(59)) })
 	It("OtherAngle(10, 20)", func() { Expect(OtherAngle(10, 20)).To(Equal(150)) })
-
+	It("Move(0, 4)", func() { Expect(Move(0, 4)).To(Equal(8)) })
+	It("Move(3, 6)", func() { Expect(Move(3, 6)).To(Equal(15)) })
+	It("Move(2, 5)", func() { Expect(Move(2, 5)).To(Equal(12)) })
 })
