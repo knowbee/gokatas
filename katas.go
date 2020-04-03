@@ -311,3 +311,27 @@ func SquareOrSquareRoot(arr []int) []int {
 	}
 	return transformed
 }
+
+// GetGrade https://www.codewars.com/kata/55cbd4ba903825f7970000f5/train/go
+// GetGrade Grasshopper - Grade book
+func GetGrade(a, b, c int) rune {
+
+	res := 'F'
+	switch {
+	case mean(a, b, c) >= 90:
+		res = 'A'
+	case mean(a, b, c) >= 80:
+		res = ('B')
+	case mean(a, b, c) >= 70:
+		res = ('C')
+	case mean(a, b, c) >= 60:
+		res = ('D')
+	case mean(a, b, c) >= 0:
+		res = ('F')
+	}
+	return res
+}
+
+func mean(a, b, c int) int {
+	return (a + b + c) / 3
+}
