@@ -298,5 +298,9 @@ var _ = Describe("Katas", func() {
 		Expect(Grow([]int{4, 1, 1, 1, 4})).To(Equal(16))
 		Expect(Grow([]int{2, 2, 2, 2, 2, 2})).To(Equal(64))
 	})
+	It("OtherAngle(30, 60)", func() { Expect(OtherAngle(30, 60)).To(Equal(90)) })
+	It("OtherAngle(60, 60)", func() { Expect(OtherAngle(60, 60)).To(Equal(60)) })
+	It("OtherAngle(43, 78)", func() { Expect(OtherAngle(43, 78)).To(Equal(59)) })
+	It("OtherAngle(10, 20)", func() { Expect(OtherAngle(10, 20)).To(Equal(150)) })
 
 })

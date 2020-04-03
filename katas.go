@@ -377,3 +377,9 @@ func Grow(arr []int) int {
 	}
 	return sum
 }
+
+// OtherAngle https://www.codewars.com/kata/5a023c426975981341000014/train/go
+// OtherAngle Third Angle of a Triangle
+func OtherAngle(a int, b int) int {
+	return 180 - (a + b)
+}
