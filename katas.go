@@ -341,3 +341,9 @@ func mean(a, b, c int) int {
 func Greet() string {
 	return "hello world!"
 }
+
+// SeatsInTheater https://www.codewars.com/kata/588417e576933b0ec9000045/train/go
+// SeatsInTheater Simple Fun #1: Seats in Theater
+func SeatsInTheater(nCols int, nRows int, col int, row int) int {
+	return (nCols - col + 1) * (nRows - row)
+}

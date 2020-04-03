@@ -244,4 +244,11 @@ var _ = Describe("Katas", func() {
 	It("should return string: 'hello world!'", func() {
 		Expect(Greet()).To(Equal("hello world!"))
 	})
+	It("Should return the correct values for the example test cases!", func() {
+		Expect(SeatsInTheater(16, 11, 5, 3)).To(Equal(96))
+		Expect(SeatsInTheater(1, 1, 1, 1)).To(Equal(0))
+		Expect(SeatsInTheater(13, 6, 8, 3)).To(Equal(18))
+		Expect(SeatsInTheater(60, 100, 60, 1)).To(Equal(99))
+		Expect(SeatsInTheater(1000, 1000, 1000, 1000)).To(Equal(0))
+	})
 })
