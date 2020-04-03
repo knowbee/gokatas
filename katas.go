@@ -401,3 +401,14 @@ func MakeUpperCase(str string) string {
 func CheckForFactor(base int, factor int) bool {
 	return base%factor == 0
 }
+
+// MonkeyCount https://www.codewars.com/kata/56f69d9f9400f508fb000ba7/train/go
+// MonkeyCount Count the Monkeys!
+func MonkeyCount(n int) []int {
+	monkeys := []int{}
+	for i := 1; i <= n; i++ {
+		monkeys = append(monkeys, i)
+	}
+	return monkeys
+
+}
