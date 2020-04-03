@@ -308,8 +308,17 @@ var _ = Describe("Katas", func() {
 	It("basic tests", func() {
 		Expect(MakeUpperCase("hello")).To(Equal("HELLO"))
 		Expect(MakeUpperCase("hello world")).To(Equal("HELLO WORLD"))
-		Expect(MakeUpperCase("hello world !")).To(Equal("HELLO WORLD !"))
+		Expect(MakeUpperCase("hello WORLD !")).To(Equal("HELLO WORLD !"))
 		Expect(MakeUpperCase("heLlO wORLd !")).To(Equal("HELLO WORLD !"))
 		Expect(MakeUpperCase("1,2,3 hello world!")).To(Equal("1,2,3 HELLO WORLD!"))
+	})
+	It("CheckForFactor", func() {
+		Expect(CheckForFactor(10, 2)).To(Equal(true))
+		Expect(CheckForFactor(63, 7)).To(Equal(true))
+		Expect(CheckForFactor(2450, 5)).To(Equal(true))
+		Expect(CheckForFactor(9, 2)).To(Equal(false))
+		Expect(CheckForFactor(653, 7)).To(Equal(false))
+		Expect(CheckForFactor(2453, 5)).To(Equal(false))
+		Expect(CheckForFactor(24617, 3)).To(Equal(false))
 	})
 })

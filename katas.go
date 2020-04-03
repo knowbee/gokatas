@@ -395,3 +395,9 @@ func Move(position int, roll int) int {
 func MakeUpperCase(str string) string {
 	return strings.ToUpper(str)
 }
+
+// CheckForFactor https://www.codewars.com/kata/55cbc3586671f6aa070000fb/train/go
+// CheckForFactor Grasshopper - Check for factor
+func CheckForFactor(base int, factor int) bool {
+	return base%factor == 0
+}
