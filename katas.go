@@ -335,3 +335,9 @@ func GetGrade(a, b, c int) rune {
 func mean(a, b, c int) int {
 	return (a + b + c) / 3
 }
+
+// Greet https://www.codewars.com/kata/523b4ff7adca849afe000035/train/go
+// Greet Function 1 - hello world
+func Greet() string {
+	return "hello world!"
+}

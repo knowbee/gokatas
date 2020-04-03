@@ -241,4 +241,7 @@ var _ = Describe("Katas", func() {
 			Expect(GetGrade(v[0], v[1], v[2])).To(Equal('F'))
 		}
 	})
+	It("should return string: 'hello world!'", func() {
+		Expect(Greet()).To(Equal("hello world!"))
+	})
 })
