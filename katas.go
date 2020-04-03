@@ -290,3 +290,9 @@ func Xor(a, b bool) bool {
 	}
 	return false
 }
+
+// Multiply https://www.codewars.com/kata/523b66342d0c301ae400003b/train/go
+// Multiply Function 3 - multiplying two numbers
+func Multiply(x, y int) int {
+	return x * y
+}

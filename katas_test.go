@@ -195,4 +195,10 @@ var _ = Describe("Katas", func() {
 		Expect(Xor(Xor(true, true), Xor(true, false))).To(Equal(true))
 		Expect(Xor(Xor(true, Xor(true, true)), Xor(Xor(true, true), false))).To(Equal(true))
 	})
+	It("Fixed tests", func() {
+		Expect(Multiply(2, 2)).To(Equal(4))
+		Expect(Multiply(4, 5)).To(Equal(20))
+		Expect(Multiply(0, 100)).To(Equal(0))
+		Expect(Multiply(1, 100)).To(Equal(100))
+	})
 })
