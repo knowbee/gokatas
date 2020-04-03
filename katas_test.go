@@ -361,4 +361,7 @@ var _ = Describe("Katas", func() {
 	It("Past(0, 0, 0)", func() { Expect(Past(0, 0, 0)).To(Equal(0)) })
 	It("Past(1, 0, 1)", func() { Expect(Past(1, 0, 1)).To(Equal(3601000)) })
 	It("Past(1, 0, 0)", func() { Expect(Past(1, 0, 0)).To(Equal(3600000)) })
+	It("Testing [1,2]", func() { Expect(SquareSum([]int{1, 2})).To(Equal(5)) })
+	It("Testing [0,3,4,5]", func() { Expect(SquareSum([]int{0, 3, 4, 5})).To(Equal(50)) })
+
 })

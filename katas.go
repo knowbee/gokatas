@@ -456,3 +456,13 @@ func Past(h, m, s int) int {
 	}
 	return millseconds
 }
+
+// SquareSum https://www.codewars.com/kata/515e271a311df0350d00000f/train/go
+// SquareSum Square(n) Sum
+func SquareSum(numbers []int) int {
+	squares := 0
+	for _, i := range numbers {
+		squares += i * i
+	}
+	return squares
+}
