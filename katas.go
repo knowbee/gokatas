@@ -296,3 +296,18 @@ func Xor(a, b bool) bool {
 func Multiply(x, y int) int {
 	return x * y
 }
+
+// SquareOrSquareRoot https://www.codewars.com/kata/57f6ad55cca6e045d2000627/train/go
+// SquareOrSquareRoot To square(root) or not to square(root)
+func SquareOrSquareRoot(arr []int) []int {
+	transformed := []int{}
+	for _, i := range arr {
+		root := math.Sqrt(float64(i))
+		if (math.Ceil(root) * root) == float64(i) {
+			transformed = append(transformed, int(float64(root)))
+		} else {
+			transformed = append(transformed, int(float64(i*i)))
+		}
+	}
+	return transformed
+}
