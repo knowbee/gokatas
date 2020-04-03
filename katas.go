@@ -421,3 +421,13 @@ func Century(year int) int {
 	}
 	return year/100 + 1
 }
+
+// Solution https://www.codewars.com/kata/5168bb5dfe9a00b126000018/train/go
+// Solution Reversed Strings
+func Solution(word string) string {
+	reversed := ""
+	for i := len(word) - 1; i >= 0; i-- {
+		reversed += string(word[i])
+	}
+	return reversed
+}

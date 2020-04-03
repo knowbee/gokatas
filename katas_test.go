@@ -341,4 +341,7 @@ var _ = Describe("Katas", func() {
 		Expect(Century(int(2000))).To(Equal(20))
 		Expect(Century(int(89))).To(Equal(1))
 	})
+	It("should test that the solution returns the correct value", func() {
+		Expect(Solution("world")).To(Equal("dlrow"))
+	})
 })
