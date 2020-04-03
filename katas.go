@@ -412,3 +412,12 @@ func MonkeyCount(n int) []int {
 	return monkeys
 
 }
+
+// Century https://www.codewars.com/kata/5a3fe3dde1ce0e8ed6000097/train/go
+// Century Century From Year
+func Century(year int) int {
+	if year%100 == 0 {
+		return year / 100
+	}
+	return year/100 + 1
+}

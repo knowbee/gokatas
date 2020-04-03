@@ -333,4 +333,12 @@ var _ = Describe("Katas", func() {
 		Expect(MonkeyCount(9)).To(Equal([]int{1, 2, 3, 4, 5, 6, 7, 8, 9}))
 		Expect(MonkeyCount(10)).To(Equal([]int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}))
 	})
+	It("should return the correct values", func() {
+		Expect(Century(int(1990))).To(Equal(20))
+		Expect(Century(int(1705))).To(Equal(18))
+		Expect(Century(int(1900))).To(Equal(19))
+		Expect(Century(int(1601))).To(Equal(17))
+		Expect(Century(int(2000))).To(Equal(20))
+		Expect(Century(int(89))).To(Equal(1))
+	})
 })
