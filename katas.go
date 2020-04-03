@@ -367,3 +367,13 @@ func CountSheep(num int) string {
 	}
 	return counts
 }
+
+// Grow https://www.codewars.com/kata/57f780909f7e8e3183000078/train/go
+// Grow Beginner - Reduce but Grow
+func Grow(arr []int) int {
+	sum := 1
+	for _, number := range arr {
+		sum = sum * number
+	}
+	return sum
+}
