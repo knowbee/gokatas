@@ -445,14 +445,14 @@ func Divide(weight int) bool {
 // Past Beginner Series #2 Clock
 func Past(h, m, s int) int {
 	millseconds := 0
-	if h == 1 {
-		millseconds += 60 * 60 * 1000
+	if h >= 1 {
+		millseconds += h * 60 * 60 * 1000
 	}
-	if m == 1 {
-		millseconds += 60 * 1000
+	if m >= 1 {
+		millseconds += m * 60 * 1000
 	}
-	if s == 1 {
-		millseconds += 1 * 1000
+	if s >= 1 {
+		millseconds += s * 1000
 	}
 	return millseconds
 }
