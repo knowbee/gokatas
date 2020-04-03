@@ -440,3 +440,19 @@ func Divide(weight int) bool {
 	}
 	return weight%2 == 0
 }
+
+// Past https://www.codewars.com/kata/55f9bca8ecaa9eac7100004a/train/go
+// Past Beginner Series #2 Clock
+func Past(h, m, s int) int {
+	millseconds := 0
+	if h == 1 {
+		millseconds += 60 * 60 * 1000
+	}
+	if m == 1 {
+		millseconds += 60 * 1000
+	}
+	if s == 1 {
+		millseconds += 1 * 1000
+	}
+	return millseconds
+}
