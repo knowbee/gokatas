@@ -347,3 +347,13 @@ func Greet() string {
 func SeatsInTheater(nCols int, nRows int, col int, row int) int {
 	return (nCols - col + 1) * (nRows - row)
 }
+
+// MyString type
+type MyString string
+
+// IsUpperCase https://www.codewars.com/kata/56cd44e1aa4ac7879200010b/train/go
+// IsUpperCase Is the string uppercase?
+func (s MyString) IsUpperCase() bool {
+	return s == MyString(strings.ToUpper(string(s)))
+
+}
