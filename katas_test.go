@@ -173,4 +173,8 @@ var _ = Describe("Katas", func() {
 		Expect(Maps([]int{4, 1, 1, 1, 4})).To(Equal([]int{8, 2, 2, 2, 8}))
 		Expect(Maps([]int{2, 2, 2, 2, 2, 2})).To(Equal([]int{4, 4, 4, 4, 4, 4}))
 	})
+	It("should handle sample Test Cases", func() {
+		Expect(OddCount(15)).To(Equal(7))
+		Expect(OddCount(15023)).To(Equal(7511))
+	})
 })

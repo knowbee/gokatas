@@ -262,3 +262,12 @@ func Maps(x []int) []int {
 	}
 	return res
 }
+
+// OddCount https://www.codewars.com/kata/59342039eb450e39970000a6/train/go
+// OddCount Count Odd Numbers below n
+func OddCount(n int) int {
+	if n%2 == 1/2 {
+		return n / 2
+	}
+	return n/2 + 1/2
+}
