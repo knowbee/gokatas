@@ -305,4 +305,11 @@ var _ = Describe("Katas", func() {
 	It("Move(0, 4)", func() { Expect(Move(0, 4)).To(Equal(8)) })
 	It("Move(3, 6)", func() { Expect(Move(3, 6)).To(Equal(15)) })
 	It("Move(2, 5)", func() { Expect(Move(2, 5)).To(Equal(12)) })
+	It("basic tests", func() {
+		Expect(MakeUpperCase("hello")).To(Equal("HELLO"))
+		Expect(MakeUpperCase("hello world")).To(Equal("HELLO WORLD"))
+		Expect(MakeUpperCase("hello world !")).To(Equal("HELLO WORLD !"))
+		Expect(MakeUpperCase("heLlO wORLd !")).To(Equal("HELLO WORLD !"))
+		Expect(MakeUpperCase("1,2,3 hello world!")).To(Equal("1,2,3 HELLO WORLD!"))
+	})
 })
